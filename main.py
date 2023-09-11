@@ -118,7 +118,10 @@ if __name__ == "__main__":
     start_button.pack()
 
 
-
-    window.iconbitmap("./icon/main.ico")
+    try:
+        window.iconbitmap("./icon/main.ico")
+    except:
+        pass
+    
     window.mainloop()
 
